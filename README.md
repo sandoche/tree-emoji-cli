@@ -6,13 +6,13 @@ Tree-emoji-cli is a recursive directory listing program that produces a depth in
 
 ## Example
 
-cmd:
+Command:
 
 ```
 tree -l 2 -o output.txt
 ```
 
-result:
+Result:
 
 ```
 D:\Sandoche\00 - Projects\Producthunt-floating-prompt

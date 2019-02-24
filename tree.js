@@ -395,11 +395,11 @@ var Promise = require('bluebird'),
       })
       .then(function () {
         _debug('generated tree:', JSON.stringify(_tree, null, 2));
-        var str = stringifyTree(_tree) + _marks.eol;
+        var str = '🌳  ' + stringifyTree(_tree) + _marks.eol;
         if (!_flags.noreport) {
           for (var i = 0, l = _types.length; i < l; i++) {
             if (_stats[_types[i]] && _stats[_types[i]].length) {
-              str += _types[i] + ': ' + _stats[_types[i]].length + ' ';
+              str += _types[i].replace(/\b\w/g, function(l){ return l.toUpperCase() })+ ': ' + _stats[_types[i]].length + ' ';
             }
           }
           console.log('\n' + _output(str) + '\n');
