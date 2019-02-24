@@ -84,6 +84,21 @@ var Promise = require('bluebird'),
   _marks,
 
   // backup marks: ├── └──
+  
+  _getEmoji = function (type) {
+    let emoji = '📄';
+
+    switch(type) {
+      case 'directory':
+        emoji = '📁';
+        break;
+      default:
+        emoji = '📄';
+    }
+
+    return emoji;
+  },
+	  
 
   _genMarks = function () {
     _marks = {
@@ -261,7 +276,7 @@ var Promise = require('bluebird'),
                 var child = {
                   type: type,
                   level: parent.level + 1,
-                  name: file,
+                  name: _getEmoji(type) + ' ' + file,
                   path: filePath,
                   lasts: parent.lasts ? parent.lasts.slice() : []
                 };
