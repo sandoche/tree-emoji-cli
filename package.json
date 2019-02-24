@@ -22,7 +22,10 @@
     "cli-tree",
     "node-tree",
     "linux",
-    "emoji"
+    "emoji",
+    "emoji-tree",
+    "tree-emoji-cli",
+    "emoji-cli"
   ],
   "dependencies": {
     "bluebird": "^3.4.6",

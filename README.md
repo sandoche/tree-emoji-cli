@@ -1,10 +1,10 @@
-# tree-cli
+# Tree Emoji CLI
 
-List contents of directories in tree-like format.
+List contents of directories in tree-like 🌳 format with Emojis 📁📄🖼️
 
-Tree-cli is a recursive directory listing program that produces a depth indented listing of files. With no arguments, tree lists the files in the current directory. When directory arguments are given, tree lists all the files and/or directories found in the given directories each in turn. Upon completion of listing all files/directories found, tree returns the total number of files and/or directories listed.
+Tree-emoji-cli is a recursive directory listing program that produces a depth indented listing of files. With no arguments, tree lists the files in the current directory. When directory arguments are given, tree lists all the files and/or directories found in the given directories each in turn with emojis. Upon completion of listing all files/directories found, tree returns the total number of files and/or directories listed.
 
-## example
+## Example
 
 cmd:
 
@@ -15,29 +15,35 @@ tree -l 2 -o output.txt
 result:
 
 ```
-/Applications/XAMPP/htdocs/node_playground/tree-cli
-├── README.md
-├── bin
-|  └── tree
-├── node_modules
-|  ├── bluebird
-|  ├── chalk
-|  ├── cli-spinner
-|  ├── meow
-|  └── object-assign
-├── package.json
-└── tree.js
+D:\Sandoche\00 - Projects\Producthunt-floating-prompt
+├── 📁  lib
+|  ├── 📄  producthunt-floating-prompt.js
+|  └── 📄  producthunt-floating-prompt.min.js
+├── 📄  LICENSE
+├── 🖼️  logo.gif
+├── 📄  package-lock.json
+├── 📄  package.json
+├── 📄  README.md
+├── 📁  src
+|  ├── 📄  floatingPrompt.js
+|  └── 📄  index.js
+├── 📁  test
+|  ├── 📄  index.html
+|  ├── 📄  index.spec.js
+|  └── 📄  mocha.opts
+├── 📄  webpack.config.js
+└── 📄  yarn.lock
 
-directory: 7 file: 4
+directory: 636 file: 14 
 ```
 
-## install
+## Install
 
 ```
-npm install -g tree-cli
+npm install -g tree-emoji-cli
 ```
 
-## usage
+## Usage
 
 use the command `tree` or `treee` (to avoid confliction with system command)
 
@@ -47,13 +53,13 @@ use the command `tree` or `treee` (to avoid confliction with system command)
 tree/treee
 ``
 
-#### use --help to list help info.
+#### Use --help to list help info.
 
 ``
 tree --help
 ``
 
-#### specify the level of path (how deep to scan).
+#### Specify the level of path (how deep to scan).
 
 use `-l levelNumber` to specify the path level.
 
@@ -61,7 +67,7 @@ use `-l levelNumber` to specify the path level.
 tree -l 2
 ```
 
-#### output result to a file
+#### Output result to a file
 
 use `-o outputFilePath` to specify the output file.
 
@@ -69,7 +75,7 @@ use `-o outputFilePath` to specify the output file.
 tree -l 2 -o out.txt
 ```
 
-#### show directory only
+#### Show directory only
 
 use `-d` to show directories only.
 
@@ -77,7 +83,7 @@ use `-d` to show directories only.
 tree -l 2 -o out.txt -d
 ```
 
-#### other arguments
+#### Other arguments
 
 see [Options](#options).
 
@@ -92,7 +98,7 @@ treee -l 2 -o out.txt -d
 ## Options
 
 * --help: outputs a verbose usage listing.
-* --version: outputs the version of tree-cli.
+* --version: outputs the version of tree-emoji-cli.
 * --debug: show debug info.
 * --fullpath: prints the full path prefix for each file.
 * --ignore: ignores directory or file you specify - accepts arrays as comma-delimited strings: `'node_modules/, .git/, .gitignore'`
@@ -104,3 +110,15 @@ treee -l 2 -o out.txt -d
 * -i: makes tree not print the indentation lines, useful when used in conjunction with the -f option.
 * -l: max display depth of the directory tree.
 * -o: send output to filename.
+
+## Credits
+This library has been forked from https://github.com/MrRaindrop/tree-cli
+
+
+## Buy me a beer 🍺
+If you like this project, feel free to donate:
+* Paypal: https://www.paypal.me/kanbanote
+* Bitcoin: 19JiNZ1LkMaz57tewqJaTg2hQWH4RgW4Yp
+* Ethereum: 0xded81fa4624e05339924355fe3504ba9587d5419
+* Monero: 43jqzMquW2q989UKSrB2YbeffhmJhbYb2Yxu289bv7pLRh4xVgMKj5yTd52iL6x1dvCYs9ERg5biHYxMjGkpSTs6S2jMyJn
+* Motive: MOTIV-25T5-SD65-V7LJ-BBWRD (Get Motive Now: https://motive.network)

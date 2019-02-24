@@ -85,15 +85,13 @@ var Promise = require('bluebird'),
 
   // backup marks: ├── └──
   
-  _getEmoji = function (type) {
+  _getEmoji = function (type, filename) {
     let emoji = '📄';
 
-    switch(type) {
-      case 'directory':
-        emoji = '📁';
-        break;
-      default:
-        emoji = '📄';
+    if (type === 'directory') {
+      emoji = '📁';
+    } else if ((/\.(gif|jpg|jpeg|tiff|png)$/i).test(filename)) {
+      emoji = '🖼️';
     }
 
     return emoji;
@@ -276,7 +274,7 @@ var Promise = require('bluebird'),
                 var child = {
                   type: type,
                   level: parent.level + 1,
-                  name: _getEmoji(type) + ' ' + file,
+                  name: _getEmoji(type, file) + '  ' + file,
                   path: filePath,
                   lasts: parent.lasts ? parent.lasts.slice() : []
                 };
