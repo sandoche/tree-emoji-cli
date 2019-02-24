@@ -1,15 +1,15 @@
 {
-  "name": "tree-cli",
-  "version": "0.4.12",
-  "description": "List contents of directories in tree-like format.",
+  "name": "tree-emoji-cli",
+  "version": "1.0.0",
+  "description": "List contents of directories in tree-like format with emojis 🌳📁📄",
   "author": {
-    "name": "_danZ",
-    "email": "tekkahs@gmail.com",
-    "url": "http://github.com/MrRaindrop"
+    "name": "Sandoche ADITTANE",
+    "email": "sandoche@adittane.com",
+    "url": "http://github.com/sandoche"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrRaindrop/tree-cli.git"
+    "url": "https://github.com/sandoche/tree-emoji-cli.git"
   },
   "bin": {
     "tree": "./bin/tree",
@@ -21,7 +21,8 @@
     "tree-cli",
     "cli-tree",
     "node-tree",
-    "linux"
+    "linux",
+	"emoji"
   ],
   "dependencies": {
     "bluebird": "^3.4.6",
