@@ -386,7 +386,20 @@ var Promise = require('bluebird'),
 
   },
 
-  make = function (flags) {
+  make = function (cli) {
+
+    var input = cli.input;
+    var flags = cli.flags;
+
+    if (input.length > 0) {
+      var rootPath = input.shift();
+      if (fs.existsSync(rootPath)) {
+        _root = rootPath;
+      } else {
+        _error(`Directory '${rootPath}' doesn't exist`);
+        process.exit(-1);
+      }
+    }
 
     init(flags)
       .then(function () {
