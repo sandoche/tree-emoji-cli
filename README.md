@@ -16,23 +16,23 @@ Result:
 
 ```
 D:\Sandoche\00 - Projects\Producthunt-floating-prompt
-├── 📁  lib
-|  ├── 📄  producthunt-floating-prompt.js
-|  └── 📄  producthunt-floating-prompt.min.js
-├── 📄  LICENSE
-├── 🖼️  logo.gif
-├── 📄  package-lock.json
-├── 📄  package.json
-├── 📄  README.md
-├── 📁  src
-|  ├── 📄  floatingPrompt.js
-|  └── 📄  index.js
-├── 📁  test
-|  ├── 📄  index.html
-|  ├── 📄  index.spec.js
-|  └── 📄  mocha.opts
-├── 📄  webpack.config.js
-└── 📄  yarn.lock
+├── 📁 lib
+|  ├── 📄 producthunt-floating-prompt.js
+|  └── 📄 producthunt-floating-prompt.min.js
+├── 📄 LICENSE
+├── 🖼️ logo.gif
+├── 📄 package-lock.json
+├── 📄 package.json
+├── 📄 README.md
+├── 📁 src
+|  ├── 📄 floatingPrompt.js
+|  └── 📄 index.js
+├── 📁 test
+|  ├── 📄 index.html
+|  ├── 📄 index.spec.js
+|  └── 📄 mocha.opts
+├── 📄 webpack.config.js
+└── 📄 yarn.lock
 
 directory: 636 file: 14 
 ```
