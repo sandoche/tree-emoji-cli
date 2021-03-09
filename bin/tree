@@ -65,4 +65,4 @@ var cli = meow({
   ]
 });
 
-tree.make(cli.flags);
+tree.make(cli);
