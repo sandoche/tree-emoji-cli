@@ -1,6 +1,6 @@
 {
   "name": "tree-emoji-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "List contents of directories in tree-like format with emojis 🌳📁📄",
   "author": {
     "name": "Sandoche ADITTANE",

@@ -274,7 +274,7 @@ var Promise = require('bluebird'),
                 var child = {
                   type: type,
                   level: parent.level + 1,
-                  name: _getEmoji(type, file) + '  ' + file,
+                  name: _getEmoji(type, file) + ' ' + file,
                   path: filePath,
                   lasts: parent.lasts ? parent.lasts.slice() : []
                 };
@@ -408,7 +408,7 @@ var Promise = require('bluebird'),
       })
       .then(function () {
         _debug('generated tree:', JSON.stringify(_tree, null, 2));
-        var str = '\n🌳  ' + stringifyTree(_tree) + _marks.eol;
+        var str = '\n🌳 ' + stringifyTree(_tree) + _marks.eol;
         if (!_flags.noreport) {
           for (var i = 0, l = _types.length; i < l; i++) {
             if (_stats[_types[i]] && _stats[_types[i]].length) {
